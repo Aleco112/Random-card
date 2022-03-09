@@ -1,4 +1,42 @@
 body {
   display: flex;
   background-color: limegreen;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#card {
+  border: 2px solid white;
+  border-radius: 20px 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  padding: 2px;
+}
+.suits.top {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 80px;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  font-size: 120px;
+}
+.suits.bottom {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 80px;
+  padding: 2px;
+}
+&.heart:before,
+&.heart:after {
+  content: "\2665";
+  color: red;
+}
+&.diamond:before,
+&diamond:after {
+  content: "\2666";
+  color: red;
 }
