@@ -31,13 +31,6 @@ body {
   padding: 2px;
   transform: scaleY(-1);
 }
-&.heart:before,
-&.heart:after {
-  content: "\2665";
-  color: red;
-}
-&.diamond:before,
-&diamond:after {
-  content: "\2666";
+.red {
   color: red;
 }
