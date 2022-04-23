@@ -32,6 +32,10 @@ function functionToRun() {
   number.innerHTML = numbers[numberIndex];
   suitTop.innerHTML = suits[suitsIndex];
   suitBottom.innerHTML = suits[suitsIndex];
+  if ("&hearts;" === suits[suitsIndex] || "&diams;" === suits[suitsIndex]) {
+    suitBottom.style.color = "red";
+    suitTop.style.color = "red";
+  }
 }
 window.onload = function() {
   functionToRun();
